@@ -55,7 +55,7 @@ namespace j1lim_DataEncodingInCSharp
             Console.WriteLine("What is the result of shifting each character in the string 'Khoor#Zruog$' by -3?");
             Console.WriteLine($"'{f}{g}{h}{h}{i}{j}{k}{i}{m}{h}{n}{o}'");*/
 
-            Cipher cipher;
+            /*Cipher cipher;
             cipher = new Cipher(5);
             string encrypted;
             encrypted = cipher.Encrypt("rosebud");
@@ -63,18 +63,33 @@ namespace j1lim_DataEncodingInCSharp
 
             string decrypted;
             decrypted = cipher.Decrypt(encrypted);
+            Console.WriteLine($"The decrypted message is '{decrypted}'.");*/
+
+            /*string message;
+            message = System.IO.File.ReadAllText("secrets/1.txt");
+            Console.WriteLine($"The encrypted message is '{message}'.");
+
+            Cipher cipher;
+            cipher = new Cipher(3);
+
+            string decrypted;
+            decrypted = cipher.Decrypt(message);
+            Console.WriteLine($"The decrypted message is '{decrypted}'.");*/
+
+            Cipher cipher;
+            cipher = new Cipher(3);
+            string filePath = args[0];
+            Console.WriteLine($"Loading'{filePath}'.");
+
+            string message;
+            message = System.IO.File.ReadAllText("filePath");
+            Console.WriteLine($"The encrypted message is '{message}'.");
+
+            string decrypted;
+            decrypted = cipher.Decrypt(message);
             Console.WriteLine($"The decrypted message is '{decrypted}'.");
 
-            // string message;
-            // message = System.IO.File.ReadAllText("secrets/1.txt");
-            // Console.WriteLine($"The encrypted message is '{message}'.");
 
-            // Cipher cipher;
-            // cipher = new Cipher(3);
-
-            // string decrypted;
-            // decrypted = cipher.Decrypt(message);
-            // Console.WriteLine($"The decrypted message is '{decrypted}'.");
 
             
 
