@@ -6,7 +6,7 @@ namespace j1lim_DataEncodingInCSharp
     {
         static void Main(string[] args)
         {
-            char ch;
+            /*char ch;
             ch = 'A';
             Console.WriteLine($"ch is storing the value: {ch}");
 
@@ -53,7 +53,14 @@ namespace j1lim_DataEncodingInCSharp
             char o;
             o = (char)('$' - 3);
             Console.WriteLine("What is the result of shifting each character in the string 'Khoor#Zruog$' by -3?");
-            Console.WriteLine($"'{f}{g}{h}{h}{i}{j}{k}{i}{m}{h}{n}{o}'");
+            Console.WriteLine($"'{f}{g}{h}{h}{i}{j}{k}{i}{m}{h}{n}{o}'");*/
+
+            Cipher cipher;
+            cipher = new Cipher(5);
+            string encrypted;
+            encrypted = cipher.Encrypt("rosebud");
+            Console.WriteLine($"The encrypted message is '{encrypted}'.");
+
 
 
 
