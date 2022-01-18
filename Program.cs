@@ -63,7 +63,22 @@ namespace j1lim_DataEncodingInCSharp
 
             string decrypted;
             decrypted = cipher.Decrypt(encrypted);
-            Console.WriteLine($"The encrypted message is '{decrypted}'.");
+            Console.WriteLine($"The decrypted message is '{decrypted}'.");
+
+            // string message;
+            // message = System.IO.File.ReadAllText("secrets/1.txt");
+            // Console.WriteLine($"The encrypted message is '{message}'.");
+
+            // Cipher cipher;
+            // cipher = new Cipher(3);
+
+            // string decrypted;
+            // decrypted = cipher.Decrypt(message);
+            // Console.WriteLine($"The decrypted message is '{decrypted}'.");
+
+            
+
+
 
 
 
