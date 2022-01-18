@@ -20,7 +20,12 @@ public class Cipher
     public string Decrypt(string message)
     {
         // TODO: Finish the Decrypt method
-        return null;
+       string newMessage = string.Empty;
+        foreach (char c in message)
+        {
+            newMessage += (char)(c - this.shift);
+        }
+        return newMessage;
     }
 
     /// <summary>

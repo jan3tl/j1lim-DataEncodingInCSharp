@@ -61,6 +61,10 @@ namespace j1lim_DataEncodingInCSharp
             encrypted = cipher.Encrypt("rosebud");
             Console.WriteLine($"The encrypted message is '{encrypted}'.");
 
+            string decrypted;
+            decrypted = cipher.Decrypt(encrypted);
+            Console.WriteLine($"The encrypted message is '{decrypted}'.");
+
 
 
 
